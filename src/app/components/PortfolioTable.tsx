@@ -37,7 +37,7 @@ export default function PortfolioTable() {
 
   async function load() {
     try {
-      const res = await axios.get<Snapshot>("http://localhost:4000/portfolio");
+      const res = await axios.get<Snapshot>("https://stock-market-dashboard-backend-meco.onrender.com");
       setData(res.data);
     } catch (err) {
       console.error("Failed to fetch portfolio:", err);
